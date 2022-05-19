@@ -1,0 +1,55 @@
+<div  style="overflow: hidden;">
+  <div class="row" >
+
+    <div class="col-md-6 col-lg-6 col-sm-6">
+      <div class="row mb-3">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <h5 class="font-weight-bold">Welcome to the future of mirrored reality</h5>
+          <p>
+            The miir.world (“mirror world”) is coming soon where everyone and
+            everything has a digital twin.
+          </p>
+          <p>
+            Create your miir (“mirror”) digital persona to interact in miir.world
+            where, unlike today’s internet, only you control all your data, privacy
+            and licensing rights.
+          </p>
+          <p>
+            Built on the DREAMCHAIN tokenized mirrored assets platform, you
+            can earn and spend Dreamium stored value tokens on a secure and
+            decentralized next generation blockchain.
+          </p>
+          <p>
+            Come join the early pioneers of the new world of tokenized mirrored
+            reality.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" id="main-item" *ngIf="!userLog">
+        <div class="col-md-6 col-lg-6 col-sm-6 align-self-center text-center">
+          <p class="green-color">Get free Dreamium Tokens</p>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 align-self-center text-center">
+          <p class="green-color">See it in Realtime</p>
+        </div>
+      </div>
+
+      <div class="row" id="sub-item" *ngIf="!userLog">
+        <div class="col-md-6 col-lg-6 col-sm-6 align-self-center text-center" id="sub-items">
+          <a class="green-color" [routerLink]="['/signup']">Sign up</a>
+          <a routerLink="/"><img src="./../../assets/images/DC.png" height="30"></a>
+          <a class="green-color" [routerLink]="['/login']">Log in</a>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 align-self-center text-center">
+          <a href="http://explore.dreamchain.org/" target="_blank" ><img src="./../../assets/images/explorer.png" height="55" width="180"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-6 col-sm-6 samplediv">
+      <img src="./../../assets/images/side_bar.png" style="height:100%;width:100%">
+    </div>
+
+  </div>
+</div>

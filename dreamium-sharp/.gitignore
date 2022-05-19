@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DrmSharp/DrmSharp/obj
+/DrmSharp/DrmSharp.UnitTests/obj
+/DrmSharp/packages
+*.suo
+/DrmSharp/DrmSharp/bin
+/DrmSharp/DrmSharp.UnitTests/bin
+/DrmSharp/.vs
+/DrmSharp/DrmSharp.UnitTests.Core/bin/Debug/netstandard2.0
+/DrmSharp/DrmSharp.UnitTests.Core/obj
+/DrmSharp/DrmSharp/*.nupkg
+/DrmSharpDemoConsole/bin
+/DrmSharpDemoConsole/obj
+/DrmSharpDemoConsole/.vs

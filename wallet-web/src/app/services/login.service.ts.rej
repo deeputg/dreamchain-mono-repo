@@ -1,0 +1,15 @@
+diff a/src/app/services/login.service.ts b/src/app/services/login.service.ts	(rejected hunks)
+@@ -151,3 +164,3 @@ export class LoginService {
+-      if(this.faucetkey=='')
+-        decodedPrivateKey = this.cryptoService.decrypt(this.privateKey)
+-      else{
++      if (this.faucetkey == "")
++        decodedPrivateKey = this.cryptoService.decrypt(this.privateKey);
++      else {
+@@ -168,3 +178,3 @@ export class LoginService {
+-      if(this.faucetkey=='')
+-        decodedPrivateKey = this.cryptoService.decrypt(this.privateKey)
+-      else{
++      if (this.faucetkey == "")
++        decodedPrivateKey = this.cryptoService.decrypt(this.privateKey);
++      else {

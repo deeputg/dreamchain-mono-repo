@@ -1,0 +1,32 @@
+language: bash
+
+services:
+ - docker
+
+branches:
+ only:
+  - master
+  - dev
+
+before_install:
+  - docker build -t dc-wallet .
+
+after_success:
+  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+  - docker tag dc-wallet:latest dreamiumlabs/dc-wallet:dc-wallet
+  - docker push dreamiumlabs/dc-wallet:dc-wallet
+
+deploy:
+  provider: elasticbeanstalk
+  region: "ap-south-1"
+  app: "Dreamchain-wallet"
+  env: "Wallet"
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
+  bucket-name: "elasticbeanstalk-ap-south-1-124828893074"
+  path: "Dreamchain-wallet"
+  on:
+    all_branches: true
+    condition: $TRAVIS_BRANCH =~ ^(master|dev)$
+  skip_cleanup: true

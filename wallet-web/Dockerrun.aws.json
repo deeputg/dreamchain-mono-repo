@@ -1,0 +1,21 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "authentication": {
+    "bucket": "elasticbeanstalk-ap-south-1-124828893074",
+    "key": "dockercfg.json"
+  },
+  "containerDefinitions": [
+    {
+      "name": "wallet",
+      "image": "dreamiumlabs/dc-wallet:dc-wallet",
+      "essential": true,
+      "memory": 512,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 80
+        }
+      ]
+    }
+  ]
+}

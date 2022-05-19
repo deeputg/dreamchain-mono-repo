@@ -1,0 +1,62 @@
+@import "../variable.scss";
+
+.fontfamilyJosefin{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+h3 {
+	margin: 50px auto;
+	text-align: center;
+	color: black;
+	opacity: 0.4;
+	font: 400 40px 'Bitter';
+}
+
+
+@media only screen and (max-width: $lg) {
+    .item-page-login{
+        &.outlet{
+            padding-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: $md) {
+    .item-page-login{
+        &.outlet{
+            padding: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: $sm) {
+    .item-page-login{
+        &.outlet{
+            display: none;
+        }
+    }
+}
+
+.middle-blue-background
+{
+bottom:0;
+position: relative;
+width: 100%;
+}
+// @media only screen and (max-width: 600px) {
+//     .middle-blue-background{
+//         bottom:0;
+//         position: fixed;
+//         width: 100%;
+//     }
+//   }
+.overflow{
+overflow: scroll;
+}
