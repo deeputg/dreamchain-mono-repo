@@ -9,3 +9,5 @@ C# client library for DreamChain blockchains.
 ### NFT-Contract
 Fungible and non-fungible token contracts.
 
+### wallet
+Web wallet application for dreamchain.
