@@ -1,0 +1,606 @@
+body {
+    background-color: #001E33;
+}
+
+section {
+    overflow-x: hidden;
+    background-color: #001E33;
+}
+
+.dc-landing{
+    color: white;
+    padding: 5rem 5rem 7rem 5rem;
+    background-color: #002340;
+    border-radius: 0 0 50% 50%/0 0 45% 45%;
+}
+
+.dc-landing h2{
+    font-size: 40px;
+}
+
+.dc-landing-index-content{
+    width: 90%;
+    font-size: 18px;
+}
+
+.dc-landing-index-img-wrap{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.dc-landing-index-image{
+    height: 30vh;
+}
+
+.dc-landing-btns{
+    list-style-type: none;
+    margin-left: -2rem;
+}
+
+.dc-landing-btns li:hover {
+    color: #fff;
+    background-color: #0062cc;
+    cursor: pointer;
+}
+
+.dc-landing-btns li{
+    float: left;
+    border: 1px solid #002340;
+    background-color: rgba(39, 71, 95, 0.7);
+    color: #A6BBCB;
+    border-radius: 10vh;
+    width: 25vh;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin-right: 1rem;
+}
+
+.dc-landing-about{
+    background-color: #001E33;
+    height: 20%;
+    z-index: 1;
+    padding: 5rem;
+}
+
+.dc-landing-about h2{
+    color: white;
+    font-size: 40px;
+    margin-top: 2rem;
+}
+.dc-landing-about-content{
+    color: white;
+    width: 80%;
+    padding-left: 7rem;
+    font-size: 18px;
+}
+
+.dc-landing-about-img-wrap{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.dc-landing-about-image{
+    height: 30vh;
+}
+
+.dc-landing-quote{
+    color: white;
+    padding: 10rem;
+}
+.dc-landing-quote h1{
+    font-size: 35px;
+}
+
+.dc-landing-faq{
+    padding: 5rem;
+}
+
+.dc-landing-faq-heading{
+    font-style: normal;
+    font-weight: 450;
+    font-size: 40px;
+    line-height: 51px;
+    color: #fff;
+}
+
+.dc-landing-social{
+    padding-top: 3rem;
+    background: rgba(0, 35, 64, 0.9);
+}
+
+.dc-landing-social-join {
+    font-style: normal;
+    font-weight: 450;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+
+.dc-lt-index-section {
+    background-color: #002340;
+    border-bottom-left-radius: 55%;
+    border-bottom-right-radius: 55%;
+    height: 60%;
+    /* position: absolute; */
+    z-index: 0;
+}
+
+.dc-lt-about-section {
+    background-color: #001E33;
+    height: 20%;
+    /* position: absolute; */
+    z-index: 1;
+}
+
+.dc-lt-small-section {
+    background: rgba(0, 35, 64, 0.9);
+    /* filter: blur(60px); */
+    height: 20%;
+}
+
+.dc-lt-faq-section {
+    background-color: #001E33;
+    height: 20%;
+}
+
+.dc-lt-heading {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 40px;
+    line-height: 51px;
+    color: #fff;
+    width: 75vh;
+}
+
+.dc-lt-index-p{
+
+    padding: 5rem 5rem 0 5rem;
+}
+.dc-lt-content {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 129%;
+    color: #fff;
+    width: 90vh;
+}
+
+.dc-lt-index-image {
+    height: 30vh;
+    /* width: 40vh; */
+}
+
+.dc-lt-faq-question {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+}
+
+.dc-lt-faq-answer {
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dc-lt-join {
+    color: #fff;
+    font-size: 25px;
+}
+
+.dc-lt-social {
+    margin-left: -45px;
+    cursor: pointer;
+    float: left !important;
+    list-style-type: none;
+}
+
+.dc-lt-social:hover {
+    color: #fff;
+}
+
+.dc-lt-social-icons {
+    float: left;
+    padding: 1vh;
+    align-content: center;
+    float: right !important;
+}
+
+.dc-lt-social-icons p {
+    font-size: 10px;
+}
+
+.dc-lt-social-icons-img {
+    padding-left: 5px;
+}
+
+.dc-lt-social-icons-fb {
+    padding-left: 15px;
+}
+
+.accordion-section {
+    color: #fff;
+}
+
+.accordion-section .panel-default>.panel-heading {
+    border: 0;
+    padding: 0;
+    border-top: 1px solid #fff;
+    text-decoration: none !important;
+}
+
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none !important;
+    border: none !important;
+}
+
+.accordion-section .panel-default .panel-title a:after {
+    text-decoration: none !important;
+    font-size: 1.5rem;
+    content: url(../../../../assets/icons/minus.png);
+    color: #1f7de2;
+    float: right;
+    margin-top: -12px;
+}
+
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: url(../../../../assets/icons/plus.png);
+}
+
+.accordion-section .panel-default .panel-body {
+    text-decoration: none !important;
+    font-size: 1rem;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .dc-landing{
+    padding: 1rem 1rem 0rem 1rem;
+    border-radius: 0 0 50% 50%/0 0 20% 20%;
+    text-align: center;
+  }
+  .dc-landing>.row{
+      margin: 0 2rem 0 0;
+  }
+  .dc-landing h2{
+      font-size: 30px;
+  }
+  .dc-landing-index-img-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dc-landing-index-image{
+      height: 60%;
+  }
+  .dc-landing-about-img-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dc-landing-about-image{
+      height: 60%;
+  }
+  .dc-landing-md-t{
+    margin-top: 2rem !important;
+}
+  .dc-landing-index-content{
+      width: 100%;
+      font-size: 15px;
+  }
+  .dc-landing-btns{
+      display: flex;
+  }
+  .dc-landing-about{
+    padding: 1rem;
+    text-align: center;
+}
+.dc-landing-about h2{
+    margin-top: 3rem;
+    font-size: 30px;
+}
+.dc-landing-about-content{
+    width: 100%;
+    padding: 0;
+    font-size: 15px;
+}
+/* .dc-landing-about-image{
+    height: 25vh;
+} */
+.dc-landing-quote{
+    padding: 1rem;
+ }
+ .dc-landing-quote h1{
+   font-size: 30px;
+ }
+ .dc-landing-faq{
+    padding: 2rem;
+}
+.dc-landing-faq-heading{
+    font-size: 30px;
+    text-align: center;
+}
+.accordion-section .panel-default .panel-title a{
+    font-size: 1.3rem;
+}
+.accordion-section .panel-default .panel-title a::after{
+    font-size: 1.3rem;
+}
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .dc-landing>.row{
+      margin: 0 2rem 0 0 !important;
+  }
+    .dc-landing h2{
+      margin-left: -2rem;
+  }
+  .dc-landing-index-content{
+      width: 100%;
+  }
+  .dc-landing-btns li{
+      width: 40vh;
+  }
+  .dc-landing-index-img-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dc-landing-index-image{
+      height: 45vh;
+  }
+  .dc-landing-about-img-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dc-landing-about-image{
+      height: 45vh;
+  }
+
+  .dc-landing-btns{
+      margin-left: 0rem;
+  }
+  .dc-landing-quote{
+    padding: 3rem;
+ }
+ .dc-landing-quote h1{
+   font-size: 30px;
+ }
+ .accordion-section .panel-default .panel-title a{
+    font-size: 1.3rem;
+}
+.accordion-section .panel-default .panel-title a::after{
+    font-size: 1.3rem;
+}
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .dc-landing{
+        padding: 1rem 1rem 3rem 1rem;
+        border-radius: 0 0 50% 50%/0 0 10% 10%;
+        text-align: center;
+      }
+      .dc-landing h2{
+          font-size: 30px;
+      }
+      .dc-landing-index-image{
+          height: 20vh;
+      }
+      .dc-landing-index-content{
+        font-size: 15px;
+        width: 100%;
+      }
+      .dc-landing-btns{
+          display: grid;
+          justify-content: center;
+      }
+      .dc-landing-btns li{
+          margin-bottom: 0.5rem;
+          width: 20vh;
+      }
+      .dc-landing-about{
+        padding: 1rem;
+        text-align: center;
+    }
+    .dc-landing-about h2{
+        font-size: 30px;
+    }
+    .dc-landing-about-content{
+        width: 100%;
+        padding: 0;
+        font-size: 15px;
+    }
+    .dc-landing-quote{
+        padding: 1rem;
+     }
+     .dc-landing-quote h1{
+       font-size: 30px;
+     }
+     .dc-landing-faq{
+        padding: 2rem;
+    }
+    .dc-landing-faq-heading{
+        font-size: 30px;
+        text-align: center;
+    }
+    .accordion-section .panel-default .panel-title a{
+        font-size: 1.3rem;
+    }
+    .accordion-section .panel-default .panel-title a::after{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation:landscape){
+    .dc-landing{
+        padding: 1rem 1rem 3rem 1rem;
+        border-radius: 0 0 50% 50%/0 0 10% 10%;
+        text-align: center;
+      }
+      .dc-landing h2{
+          font-size: 30px;
+      }
+      .dc-landing-about-img-wrap{
+          display: grid;
+          align-content: center;
+      }
+      .dc-landing-index-image{
+          height: 50vh;
+          margin-left: 3rem;
+          margin-top: 5rem;
+      }
+      .dc-landing-index-content{
+        font-size: 15px;
+        width: 100%;
+      }
+      .dc-landing-btns{
+          display: flex;
+      }
+      .dc-landing-btns li{
+          margin-bottom: 0.5rem;
+          width: 35%;
+      }
+      .dc-landing-about{
+        padding: 1rem;
+        text-align: center;
+    }
+    .dc-landing-about h2{
+        font-size: 30px;
+    }
+    .dc-landing-about-content{
+        width: 100%;
+        padding: 0;
+        font-size: 15px;
+    }
+    .dc-landing-about-image{
+        height: 50vh;
+    }
+    .dc-landing-quote{
+        padding: 1rem;
+     }
+     .dc-landing-quote h1{
+       font-size: 30px;
+     }
+     .dc-landing-faq{
+        padding: 2rem;
+    }
+    .dc-landing-faq-heading{
+        font-size: 30px;
+        text-align: center;
+    }
+    .accordion-section .panel-default .panel-title a{
+        font-size: 1.3rem;
+    }
+    .accordion-section .panel-default .panel-title a::after{
+        font-size: 1.3rem;
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .dc-landing{
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 0 0 50% 50%/0 0 10% 10%;
+    text-align: center;
+  }
+  .dc-landing h2{
+      font-size: 30px;
+  }
+  .dc-landing-index-content{
+    font-size: 15px;
+    width: 100%;
+  }
+  .dc-landing-btns{
+      display: grid;
+      justify-content: center;
+  }
+  .dc-landing-btns li{
+      margin-bottom: 0.5rem;
+  }
+  .dc-landing-about{
+      padding: 1rem;
+      text-align: center;
+  }
+  .dc-landing-about h2{
+      font-size: 30px;
+  }
+  .dc-landing-about-content{
+      width: 100%;
+      padding: 0;
+      font-size: 15px;
+  }
+  .dc-landing-quote{
+     padding: 2rem;
+  }
+  .dc-landing-quote h1{
+    font-size: 30px;
+  }
+  .dc-landing-faq{
+      padding: 2rem;
+  }
+  .dc-landing-faq-heading{
+      font-size: 30px;
+      text-align: center;
+  }
+  .accordion-section .panel-default .panel-title a{
+      font-size: 1.3rem;
+  }
+  .accordion-section .panel-default .panel-title a::after{
+      font-size: 1.3rem;
+  }
+}

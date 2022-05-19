@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="row dc-login {{!afterKeyChange?'dc-login-extra-padding':'dc-login-extra-padding-rm'}}">
+    <div class="col-sm-6 col-md-6 col-lg-6 dc-login-img-wrap">
+      <img class="dc-login-img" src="./../../assets/images/login.png" alt="Login Image">
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 dc-login-color">
+      <form [formGroup]="loginForm" (ngSubmit)="login()" autocomplete="off">
+        <h3>Account Log-in</h3>
+        <p>Enter or paste your private key below to log-in to your account</p>
+        <label for="">Private Key</label><br>
+        <input type="password" class="form-control form-control-lg dc-lt-rounded-field" name="privateKey"
+          formControlName="privateKey" (input)="onLoginChange()">
+        <app-control-messages [control]="loginForm.controls.privateKey"></app-control-messages>
+        <br>
+        <div class="card dc-login-card justify-content-center">
+          <div class="card-body" *ngIf="afterKeyChange">
+            <h6 class="card-title">Public Key</h6>
+            <p class="card-text">{{pubKey}}</p>
+          </div>
+        </div>
+        <div class="card dc-login-card justify-content-center">
+          <div class="card-body" *ngIf="afterKeyChange">
+            <h6 class="card-title">Account Name</h6>
+            <p class="card-text">{{aName}}</p>
+          </div>
+        </div>
+        <button type="submit" [disabled]="!loginForm.valid" class="btn btn-primary dc-lt-rounded-field dc-lt-btn-color"
+          name="button">Login</button><br><br>
+        <label for="">Dont have an account?</label><br>
+        <a routerLink="/register">Create One</a>
+      </form>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

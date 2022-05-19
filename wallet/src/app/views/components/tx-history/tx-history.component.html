@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div class="row dc-lt-main">
+  <div class="col-sm-2 col-md-0 col-lg-3">
+   <app-sidebar></app-sidebar>
+  </div>
+  <div class="col-sm-10 col-md-12 col-lg-9 pt-3">
+    <table class="table dc-lt-table table-striped table-responsive table-borderless" scrollY="true">
+      <thead class="thead dc-lt-head">
+        <tr>
+          <th scope="col" class="">Time</th>
+          <th scope="col" class="text-center">Direction</th>
+          <th scope="col" class="">From</th>
+          <th scope="col" class="">To</th>
+          <th scope="col" class="mw-300">Note</th>
+          <th scope="col" class="">Quantity</th>
+          <th scope="col" class="">Transaction ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of result?.actions; let i = index">
+          <td class="text-nowrap">{{item.block_time | date:'MMMM d y h:mm:ss a'}}</td>
+          <td class="text-center direction-out">{{item.action_trace.act.data.from == accountName?'Out':'In'}}</td>
+          <td class="">{{item.action_trace.act.data.from}}</td>
+          <td class="">{{item.action_trace.act.data.to}}</td>
+          <td class="">{{item.action_trace.act.data.memo}}</td>
+          <td class="text-nowrap">{{item.action_trace.act.data.quantity}}</td>
+          <td class="">{{item.action_trace.trx_id}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,9 +1,0 @@
-<div class= "page-container">
-  <div [ngClass]="{'window-container shadow-lg': true, 'one-container': !loginService.loggedIn()}">
-  <h3 class="header">{{'faq.title' | translate}}</h3>
-  <section class="question-section" *ngFor="let section of 'faq.faq-sections' | translate">
-      <h4 class="question">{{ section.question }}</h4>
-      <div class="answer"><p [innerHTML]="telegramLinkReplase(section.answer)"></p></div>
-  </section>
-  </div>
-</div>

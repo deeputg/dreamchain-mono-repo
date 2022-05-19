@@ -1,0 +1,28 @@
+<div class="drawer-left  drawer--left" *ngIf="this.scrWidth < 992">
+  <button type="button" class="drawer-toggle drawer-hamburger" style="color:#fff; padding-top: 1%;" (click)="toggle_left()">
+  <i class="fas fa-bars fa-2x"></i>
+  </button>
+  <div class="dc-lt-sidebar drawer-nav" role="navigation">
+  <ul class="dc-lt-ul-main drawer-menu">
+    <li><a class="nav-link cursor-pointer drawer-menu-item" [routerLink]="['/dashboard']" routerLinkActive="active"><img class="p-3" src="./../../assets/icons/myaccount.png" alt="Myaccount Image">My Account</a></li>
+    <li><a class="nav-link cursor-pointer drawer-menu-item" [routerLink]="['/findAccount']" routerLinkActive="active"><img class="p-3" src="./../../assets/icons/searchaccount.png" alt="SearchAccount Image"> Find Account</a></li>
+    <li><a class="nav-link cursor-pointer drawer-menu-item" [routerLink]="['/txHistory']" routerLinkActive="active"><img class="p-3" src="./../../assets/icons/txhistory.png" alt="TxHistory Image">Transaction History</a></li>
+  </ul>
+  <ul>
+    <li class="dc-lt-margin-bottom"><a routerLink="/" (click)="logout()"><img class="p-2" src="./../../assets/icons/logout.png" alt="Logout Image">Logout</a></li>
+  </ul>
+  </div>
+</div>
+
+<div *ngIf="this.scrWidth > 992">
+  <div class="dc-lt-sidebar">
+  <ul class="dc-lt-ul-main drawer-menu">
+    <li><a class="nav-link cursor-pointer drawer-menu-item" [routerLink]="['/dashboard']" routerLinkActive="active"><img class="p-3" src="./../../assets/icons/myaccount.png" alt="Myaccount Image">My Account</a></li>
+    <li><a class="nav-link cursor-pointer drawer-menu-item" [routerLink]="['/findAccount']" routerLinkActive="active"><img class="p-3" src="./../../assets/icons/searchaccount.png" alt="SearchAccount Image"> Find Account</a></li>
+    <li><a class="nav-link cursor-pointer drawer-menu-item" [routerLink]="['/txHistory']" routerLinkActive="active"><img class="p-3" src="./../../assets/icons/txhistory.png" alt="TxHistory Image">Transaction History</a></li>
+  </ul>
+  <ul>
+    <li class="dc-lt-margin-bottom"><a routerLink="/" (click)="logout()"><img class="p-2" src="./../../assets/icons/logout.png" alt="Logout Image">Logout</a></li>
+  </ul>
+  </div>
+</div>

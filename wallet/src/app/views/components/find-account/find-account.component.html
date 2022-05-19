@@ -1,0 +1,178 @@
+<app-header></app-header>
+<div class="row dc-lt-main">
+  <div class="col-sm-2 col-md-0 col-lg-3">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="col-sm-10 col-md-12 col-lg-8 pt-3">
+    <div class="row justify-content-center">
+
+      <div class="col-sm-12 col-md-12 col-lg-12 dc-lt-card-color dc-lt-card-top  box-shadow">
+        <form [formGroup]="findForm" class="row p-4 pl-4 pr-4" (ngSubmit)="searchAccount()">
+          <label for="" class="dc-lt-account-name col-12">Find Account</label><br/>
+          <div class="col-12">
+            <input type="text" name="" value="" class="form-control form-control-lg" formControlName="accountName" #accountName
+              maxlength="12" (click)="accountName.value=''">
+            <app-control-messages [control]="findForm.controls.accountName"></app-control-messages><br />
+          </div>
+          <div class="col-3">
+            <button type="submit" [disabled]="!findForm.valid" class="btn btn-primary dc-lt-rounded-button"
+              name="button">Search</button>
+          </div>
+
+          <p>
+            <br>
+
+          </p>
+        </form>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <p><br></p>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-12 dc-lt-card-color dc-lt-card-bottom p-3 pl-4  box-shadow">
+        <form class="p-4">
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 text-left">
+              <label for="" class="dc-lt-item">Total Balance</label>
+            </div>
+
+            <div class="col-sm-8 col-md-8 col-lg-8 text-left">
+              <label for="" class="dc-lt-value">{{totalBalance}} Dreamchain Token / 1,034,996,191.03 USD </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 text-left">
+              <label for="" class="dc-lt-item">Unstaked</label>
+            </div>
+
+            <div class="col-sm-8 col-md-8 col-lg-8 text-left">
+              <label for="" class="dc-lt-value">{{unstaked}} DRMC </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 text-left">
+              <label for="" class="dc-lt-item">Stacked</label>
+            </div>
+
+            <div class="col-sm-8 col-md-8 col-lg-8 text-left">
+              <label for="" class="dc-lt-value">{{stacked}} DRMC </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 text-left">
+              <label for="" class="dc-lt-item">Privileged</label>
+            </div>
+
+            <div class="col-sm-7 col-md-7 col-lg-7 text-left">
+              <label for="" class="dc-lt-value">{{privileged}}</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 ">
+              <label for="" class="dc-lt-item">Total Resources</label>
+            </div>
+
+            <div class="col-sm-8 col-md-8 col-lg-8">
+              <label for="" class="dc-lt-item">CPU weight</label>
+              <label for="" class="dc-lt-value">{{cpuWeight}}</label>
+              <label for="" class="dc-lt-item">NET weight</label>
+              <label for="" class="dc-lt-value"> {{netWeight}}</label>
+              <label for="" class="dc-lt-item"> Owner</label>
+              <label for="" class="dc-lt-value"> {{owner}}</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 ">
+              <label for="" class="dc-lt-item">Delegated Bandwidth</label>
+            </div>
+
+            <div class="col-sm-8 col-md-8 col-lg-8">
+              <label for="" class="dc-lt-item">CPU weight</label>
+              <label for="" class="dc-lt-value">{{cpuDelegated}}</label>
+              <label for="" class="dc-lt-item">NET weight</label>
+              <label for="" class="dc-lt-value"> {{netDelegated}}</label>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 text-left">
+              <label for="" class="dc-lt-item">Created</label>
+            </div>
+
+            <div class="col-sm-8 col-md-8 col-lg-8 text-left">
+              <label for="" class="dc-lt-value">{{created}}</label>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <h3 class="dc-lt-bar-red">CPU</h3>
+              <h4 class="dc-lt-content dc-lt-red-bar"></h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <label for="" class="dc-lt-value">Remain</label><br>
+                  <label for="" class="dc-lt-value">{{cpuAvailable}} / {{cpuMax}} us</label>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <label for="" class="dc-lt-stacked">Staked: </label>
+                  <label for="" class="dc-lt-value">{{cpuStaked}}</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <h3 class="dc-lt-bar-green">NET</h3>
+              <h4 class="dc-lt-content dc-lt-green-bar"></h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <label for="" class="dc-lt-value">Remain</label><br>
+                  <label for="" class="dc-lt-value">{{netAvailable}} / {{netMax}} MB</label>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <label for="" class="dc-lt-stacked">Staked: </label>
+                  <label for="" class="dc-lt-value">{{netStaked}}</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <h3 class="dc-lt-bar-blue">RAM</h3>
+              <h4 class="dc-lt-content dc-lt-blue-bar"></h4>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                  <label for="" class="dc-lt-value">Remain</label><br>
+                  <label for="" class="dc-lt-value">{{ramAvailable}} / {{ramMax}} MB</label>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 text-left">
+              <label for="" class="dc-lt-item">Tokens</label>
+            </div>
+
+            <div class="col-sm-8 col-md-8 col-lg-8 text-left">
+              <label for="" class="dc-lt-value">{{tokens[0]}}</label>
+              <label for="" class="dc-lt-value">{{tokens[1]}}</label>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,69 @@
+<div *ngIf="this.scrWidth < 992 && isLoggedIn">
+  <nav class="navbar navbar-expand-lg navbar-dark dc-lt-header-color dc-lt-nav-height drawer-right drawer--right">
+     <div class="container-fluid">
+        <a [routerLink]="['/']" class="navbar-brand">
+        <img src="./../../assets/images/logo_white.png"  class="d-inline-block align-top" alt="">
+        </a>
+        <a *ngIf="buttonRight" class="fa fa-ellipsis-h fa-x" style="color:#fff; padding-right: 5%; position:relative; cursor:pointer;" (click)="toggle_right()">
+        <!-- <i class="fa fa-ellipsis-h fa-x"></i> -->
+        </a>
+        <!-- <div class="collapse navbar-collapse" > -->
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)" class="closebtn" (click)="close()">×</a><br>
+          <a target="_blank" href="http://13.232.145.77/">Explorer</a>
+          <!-- <a href="#faq">FAQ</a> -->
+        </div>
+        <!-- </div> -->
+     </div>
+  </nav>
+</div>
+<div *ngIf="this.scrWidth > 992 && isLoggedIn">
+  <nav class="navbar navbar-expand-lg navbar-dark dc-lt-header-color dc-lt-nav-height">
+     <div class="container-fluid">
+        <a  [routerLink]="['/']" class="navbar-brand">
+        <img src="./../../assets/images/logo_white.png"  class="d-inline-block align-top" alt="">
+        </a>
+        <button *ngIf="!isLoggedIn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-ellipsis-h"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           <ul class="navbar-nav ml-auto">
+              <!-- <li class="nav-item">
+                 <a class="nav-link dc-lt-white-color"  href="#about">About</a>
+              </li> -->
+              <li class="nav-item">
+                 <a class="nav-link dc-lt-white-color" target="_blank" href="http://13.232.145.77/">Explorer</a>
+              </li>
+              <!-- <li class="nav-item">
+                 <a class="nav-link dc-lt-white-color"  href="#faq">FAQ</a>
+              </li> -->
+           </ul>
+        </div>
+     </div>
+  </nav>
+</div>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark dc-lt-header-color dc-lt-nav-height" *ngIf="!isLoggedIn">
+     <div class="container-fluid">
+        <a  [routerLink]="['/']" class="navbar-brand">
+        <img src="./../../assets/images/logo_white.png"  class="d-inline-block align-top" alt="">
+        </a>
+        <button *ngIf="!isLoggedIn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-ellipsis-h"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                 <a class="nav-link dc-lt-white-color"  href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link dc-lt-white-color" target="_blank" href="http://13.232.145.77/">Explorer</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link dc-lt-white-color"  href="#faq">FAQ</a>
+              </li>
+           </ul>
+        </div>
+     </div>
+  </nav>

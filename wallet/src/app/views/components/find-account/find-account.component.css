@@ -1,0 +1,133 @@
+.dc-lt-main{
+  margin-right: 0;
+  background-color: #002340;
+}
+
+.dc-lt-card-top{
+  height: 34vh;
+}
+
+.dc-lt-card-bottom{
+  height: 42vh;
+  overflow-y: scroll;
+  padding: 2%;
+}
+
+.dc-lt-card-color{
+  background-color: #011826;
+}
+
+.dc-lt-account-name{
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 38px;
+  color: #fff;
+}
+
+.dc-lt-grey{
+  color: #7D7D7D;
+}
+
+.dc-lt-rounded-button{
+  width: 20vh;
+  border-radius: 25px;
+}
+
+.dc-lt-item{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  padding-right: 2%;
+}
+
+.dc-lt-value{
+  font-style: normal;
+  font-weight: 450;
+  font-size: 10px;
+  line-height: 13px;
+  color: #B8B7B7;
+  padding-right: 2%;
+}
+
+.dc-lt-bar-red{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FD746C;
+}
+
+.dc-lt-bar-green{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #2ECC71;
+}
+
+.dc-lt-bar-blue{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #3498DB;
+}
+
+.dc-lt-stacked{
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+  color: #fff;
+}
+
+.dc-lt-content{
+  text-align: right;
+  background-color: #E5E5E5;
+  height: 1vh;
+  border-radius: 10px;
+  width: 100%;
+
+}
+
+.dc-lt-red-bar{
+  background-color: #FD746C;
+  width:70%;
+  border-radius: 10px;
+}
+
+.dc-lt-green-bar{
+  background-color: #2ECC71;
+  width:70%;
+}
+
+.dc-lt-blue-bar{
+  background-color: #3498DB;
+  width:70%;
+}
+
+.dc-lt-bottom-gap{
+  background-color: #002340;
+  height: 1vh;
+}
+
+@media only screen and (device-width: 768px){
+  .dc-lt-card-top{
+    height: 19vh;
+  }
+  .dc-lt-card-bottom{
+    height: 39vh;
+    overflow-y: scroll;
+    padding: 2%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+.dc-lt-card-top{
+  height: 30%;
+}
+  
+}

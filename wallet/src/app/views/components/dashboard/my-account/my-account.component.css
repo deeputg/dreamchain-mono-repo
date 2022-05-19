@@ -1,0 +1,493 @@
+.dc-dash-card{
+  background-color: #011826;
+  padding: 1rem 2rem;
+  height: 100%;
+}
+
+.dc-dash-balance-card{
+  background-color: #011826;
+}
+.dc-dash-transfer-card{
+  background-color: #011826;
+  padding: 5rem !important;
+
+}
+.dc-dash-token-card{
+  background-color: #011826;
+  padding: 5rem !important;
+}
+.dc-dash-balance{
+  list-style-type: none;
+  margin-left: -25vh;
+}
+.dc-dash-balance li{
+  float: left;
+}
+.dc-dash-balance li:nth-child(1){
+  padding: 4rem;
+}
+.dc-dash-balance li:nth-child(2){
+  padding: 2.5rem;
+}
+.dc-dash-balance li:nth-child(3){
+  padding: 4.5rem;
+}
+.dc-lt-account-name{
+  font-style: normal;
+  font-weight: 200;
+  font-size: 27px;
+  line-height: 15px;
+  color: #fff;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+
+.dc-lt-grey{
+  color: #7D7D7D;
+  margin-left: 3.3rem;
+}
+
+.dc-lt-balance-grey{
+  color: #7D7D7D;
+}
+.dc-lt-wallet-balance{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.dc-lt-drmc-balance{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 25px;
+  color: #FD746C;
+}
+
+.dc-lt-drmi-balance{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 25px;
+  color: #2ECC71;
+}
+
+.dc-lt-btn{
+  left: 259px;
+  top: 529px;
+  background: #27475F;
+  border-radius: 5px;
+  color: #5F788B;
+  height: 80%;
+  width: 90%;
+}
+
+.dc-lt-btn:hover{
+  left: 259px;
+  top: 429px;
+  background: #447EF2;
+  border-radius: 5px;
+  color: #fff;
+  height: 80%;
+  width: 90%;
+}
+
+.dc-lt-btn:active{
+  left: 259px;
+  top: 429px;
+  background: #447EF2;
+  border-radius: 5px;
+  color: #fff;
+  height: 80%;
+  width: 90%;
+}
+
+.dc-lt-buy-drmc{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 25px;
+  color: #fff;
+
+}
+
+.dc-lt-pay{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.dc-lt-top-column{
+  height: 17vh;
+}
+
+.dc-lt-bottom-column{
+  height: 57vh;
+}
+
+.dc-lt-rounded-button{
+  width: 20vh;
+  border-radius: 25px;
+}
+
+.dc-lt-clipboard{
+   background-color:  rgba(196, 196, 196, 0.7);
+   border-radius: 50%;
+   padding: 2%;
+   cursor: pointer;
+}
+
+@media only screen and (device-width: 320px){
+  .dc-dash-transfer-card{
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2){
+  .dc-dash-card{
+    padding-left: 3vh;
+  }
+  .dc-dash-card img{
+    margin-top: 1rem;
+  }
+  .dc-lt-account-name{
+    font-size: 25px;
+    margin-top: 2rem;
+    line-height: 10px;
+  }
+  .dc-lt-grey{
+    margin-top: -5rem;
+  }
+  .dc-lt-top-column{
+    height: 50vh;
+  }
+  .dc-dash-balance{
+    margin-left: -7vh;
+    align-content: center;
+    display: grid;
+    text-align: center;
+  }
+
+  .dc-dash-balance li:nth-child(1){
+    padding: 2rem;
+  }
+  .dc-dash-balance li:nth-child(2){
+    padding: 0rem;
+  }
+  .dc-dash-balance li:nth-child(3){
+    padding: 0rem;
+  }
+  .dc-dash-transfer-card{
+    height: 75vh;
+  }
+  .dc-dash-transfer-card{
+    height: 77vh;
+    padding: 2rem !important;
+  }
+  .dc-dash-token-card{
+    height: 60vh;
+    padding-left: 2rem !important;
+    padding-top: 2rem !important;
+  }
+}
+
+@media only screen and (device-width: 768px){
+  .dc-dash-card{
+    padding: 1rem;
+  }
+  .dc-lt-account-name{
+    font-size: 15px;
+    margin-top: 2rem;
+    line-height: 10px;
+  }
+  .dc-lt-top-column{
+    height: 12vh;
+  }
+  .dc-dash-balance{
+    margin-left: -10vh;
+  }
+  .dc-dash-balance li{
+    float: left;
+  }
+  .dc-dash-balance li:nth-child(1){
+    padding: 2.5rem 0px 0rem 4rem;
+  }
+  .dc-dash-balance li:nth-child(2){
+    padding-top: 1.5rem;
+  }
+  .dc-dash-balance li:nth-child(3){
+    padding: 1rem;
+    padding-top: 3.5rem;
+  }
+  .dc-lt-wallet-balance{
+    font-size: 20px;
+  }
+  .dc-lt-drmc-balance{
+    font-size: 17px;
+  }
+  .dc-lt-drmi-balance{
+    font-size: 17px;
+  }
+  .dc-dash-transfer-card{
+    padding: 5rem 1rem 1rem 2rem !important;
+  }
+  .dc-dash-token-card{
+    padding-left: 5rem !important;
+    padding-top: 5rem !important;
+  }
+}
+@media only screen and (device-width: 1024px){
+  .dc-dash-card{
+    padding: 1rem;
+  }
+  .dc-lt-account-name{
+    font-size: 15px;
+    margin-top: 2rem;
+    line-height: 10px;
+  }
+  .dc-lt-top-column{
+    height: 12vh;
+  }
+  .dc-dash-balance{
+    margin-left: -10vh;
+  }
+  .dc-dash-balance li{
+    float: left;
+  }
+  .dc-dash-balance li:nth-child(1){
+    padding: 2.5rem 0px 0rem 4rem;
+  }
+  .dc-dash-balance li:nth-child(2){
+    padding-top: 1.5rem;
+  }
+  .dc-dash-balance li:nth-child(3){
+    padding: 1rem;
+    padding-top: 3.5rem;
+  }
+  .dc-lt-wallet-balance{
+    font-size: 20px;
+  }
+  .dc-lt-drmc-balance{
+    font-size: 17px;
+  }
+  .dc-lt-drmi-balance{
+    font-size: 17px;
+  }
+  .dc-dash-transfer-card{
+    padding-top: 4rem;
+  }
+  .dc-dash-token-card{
+    padding-left: 6rem !important;
+    padding-top: 6rem !important;
+  }
+}
+@media only screen and (device-width: 1366px){
+  .dc-dash-card{
+    padding: 0rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    height: 20vh;
+  }
+  .dc-lt-account-name{
+    font-size: 17px;
+    margin-top: 2rem;
+    line-height: 10px;
+  }
+  .dc-lt-top-column{
+    height: 20vh;
+  }
+  .dc-dash-balance{
+    margin-left: -15vh;
+  }
+  .dc-dash-balance li{
+    float: left;
+  }
+  .dc-dash-balance li:nth-child(1){
+    padding: 2.5rem 0px 0rem 4rem;
+  }
+  .dc-dash-balance li:nth-child(2){
+    padding-top: 1.5rem;
+    margin-left: 3rem;
+  }
+  .dc-dash-balance li:nth-child(3){
+    padding: 1rem;
+    padding-top: 3.5rem;
+    margin-left: 3rem;
+  }
+  .dc-lt-wallet-balance{
+    font-size: 20px;
+  }
+  .dc-lt-drmc-balance{
+    font-size: 17px;
+  }
+  .dc-lt-drmi-balance{
+    font-size: 17px;
+  }
+  .dc-dash-transfer-card{
+    padding: 2rem !important;
+  }
+  .dc-dash-token-card{
+    padding: 2rem !important;
+  }
+}
+
+
+@media only screen and (device-width: 320px){
+  .dc-dash-card{
+    padding: 0.5rem;
+  }
+  .dc-lt-account-name{
+    font-size: 15px;
+    margin-top: 2rem;
+    line-height: 10px;
+  }
+  .dc-lt-top-column{
+    height: 62vh;
+  }
+  .dc-dash-balance{
+    margin-left: -15vh;
+  }
+  .dc-dash-balance li{
+    float: left;
+  }
+  .dc-dash-balance li:nth-child(1){
+    padding: 2.5rem 0px 0rem 4rem;
+  }
+  .dc-dash-balance li:nth-child(2){
+    padding-top: 1.5rem;
+    margin-left: 3rem;
+  }
+  .dc-dash-balance li:nth-child(3){
+    padding: 1rem;
+    padding-top: 3.5rem;
+    margin-left: 3rem;
+  }
+  .dc-lt-wallet-balance{
+    font-size: 20px;
+  }
+  .dc-lt-drmc-balance{
+    font-size: 17px;
+  }
+  .dc-lt-drmi-balance{
+    font-size: 17px;
+  }
+  .dc-dash-transfer-card{
+    padding: 2rem !important;
+  }
+  .dc-dash-token-card{
+    padding: 2rem !important;
+  }
+}
+
+
+@media only screen and (device-width: 812px){
+  .dc-dash-card{
+    padding: 1rem;
+  }
+  .dc-lt-account-name{
+    font-size: 15px;
+    margin-top: 2rem;
+    line-height: 10px;
+  }
+  .dc-lt-top-column{
+    height: 33vh;
+  }
+  .dc-lt-bottom-column{
+    height: 82vh;
+  }
+  .dc-dash-balance{
+    margin-left: -40vh;
+
+  }
+  .dc-dash-balance li{
+    float: left;
+  }
+  .dc-dash-balance li:nth-child(1){
+    padding: 2.5rem 0px 0rem 4rem;
+  }
+  .dc-dash-balance li:nth-child(2){
+    padding-top: 1.5rem;
+    margin-left: -1rem;
+  }
+  .dc-dash-balance li:nth-child(3){
+    padding: 1rem;
+    padding-top: 3.5rem;
+    margin-left: -1rem;
+  }
+  .dc-lt-wallet-balance{
+    font-size: 20px;
+  }
+  .dc-lt-drmc-balance{
+    font-size: 17px;
+  }
+  .dc-lt-drmi-balance{
+    font-size: 17px;
+  }
+  .dc-dash-transfer-card{
+    padding: 1rem !important;
+  }
+  .dc-dash-token-card{
+    padding: 1rem !important;
+  }
+  .drawer-hamburger{
+    position: absolute !important;
+    top: -13vh !important;
+    left: 4vh;
+  }
+  .pt-5{
+    padding-top: 1rem !important;
+  }
+}
+
+
+@media only screen and (device-width: 370px) and (device-height: 667px){
+  .dc-dash-card{
+    padding: 0rem;
+    font-size: 10px;
+  }
+  .dc-lt-account-name{
+    font-size: 15px;
+    margin-top: 2rem;
+    line-height: 10px;
+  }
+  .dc-lt-top-column{
+    height: 62vh;
+  }
+  .dc-dash-balance{
+    margin-left: -15vh;
+  }
+  .dc-dash-balance li{
+    float: left;
+  }
+  .dc-dash-balance li:nth-child(1){
+    padding: 2.5rem 0px 0rem 4rem;
+  }
+  .dc-dash-balance li:nth-child(2){
+    padding-top: 1.5rem;
+    margin-left: 3rem;
+  }
+  .dc-dash-balance li:nth-child(3){
+    padding: 1rem;
+    padding-top: 3.5rem;
+    margin-left: 3rem;
+  }
+  .dc-lt-wallet-balance{
+    font-size: 20px;
+  }
+  .dc-lt-drmc-balance{
+    font-size: 17px;
+  }
+  .dc-lt-drmi-balance{
+    font-size: 17px;
+  }
+  .dc-dash-transfer-card{
+    padding: 2rem !important;
+  }
+  .dc-dash-token-card{
+    padding: 2rem !important;
+  }
+}

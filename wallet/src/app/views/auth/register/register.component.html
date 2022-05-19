@@ -1,0 +1,60 @@
+<app-header></app-header>
+<div class="container-fluid dc-reg">
+  <div class="row dc-reg-child">
+    <div class="col-sm-6 col-md-6 col-lg-5">
+      <div class="card dc-reg-card">
+          <div class="card-img">
+            <img class="dc-reg-img card-img-top" src="./../../assets/images/register.png" alt="Login Image">
+          </div>
+        <div class="card-body"  *ngIf="!afterKeyGen">
+          <h5 class="card-title">Get Started</h5>
+          <p class="card-text">Create your account keys to receive your free Dreamium token.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-7 dc-reg-color">
+      <form class="text-center" *ngIf="!afterKeyGen">
+        <label for="">Public Key</label><br>
+        <input type="text" class="form-control form-control-lg dc-lt-rounded-field" name="publicKey" value={{publicKey}}
+          readonly>
+        <img src="./../../assets/icons/clipboard.png" class="dc-lt-clipboard ml-auto" (click)="doCopyPublicKey()"
+          alt="Clipboard">
+        <!-- <div class="alert alert-success" *ngIf="isCopyPublicKey">
+        <strong>Copied!</strong>
+        </div> -->
+        <br>
+        <label for="">Private Key</label><br>
+        <input type="text" class="form-control form-control-lg dc-lt-rounded-field" name="privateKey"
+          value={{privateKey}} readonly tabindex="0">
+        <img class="img" src="./../../assets/icons/clipboard.png" alt="Clipboard" (click)="doCopyPrivateKey()"
+          class="dc-lt-clipboard ml-auto" tabindex="0">
+        <!-- <div class="alert alert-success" *ngIf="isCopyPrivateKey">
+          <strong>Copied!</strong>
+          </div> -->
+        <br>
+        <label class="text-left" for="">
+          IMPORTANT: <br>
+          There is no way to recover your private key. It is the only way for you to prove your identity and ownership of your token.
+          <br>
+          Please "copy" and "paste" your private key to a safe place. We suggest you also take a screenshot of this page now and keep it in a secure place as a back-up.
+
+        </label><br>
+        <button type="button" class="btn btn-primary dc-lt-rounded-field dc-lt-btn-color" name="button"
+          (click)="onContinue()">Continue</button><br><br>
+        <label for="">Already have an account?</label><br>
+        <a routerLink="/login">Sign In</a>
+      </form>
+      <form [formGroup]="registerForm" (ngSubmit)="signup()" autocomplete="off" *ngIf="afterKeyGen">
+        <label for="">Create your Account Name</label><br>
+        <input type="text" class="form-control form-control-lg dc-lt-rounded-field" name="accountName" maxlength="12"
+          minlength="12" formControlName="accountName"><br>
+          <label for="" style="color: rgb(209, 209, 64);">12 Characters long with only having a-z and 1-5.</label>
+        <app-control-messages [control]="registerForm.controls.accountName"></app-control-messages>
+        <br>
+        <button type="submit" [disabled]="!registerForm.valid"
+          class="btn btn-primary dc-lt-rounded-field dc-lt-btn-color" name="signUp">Create</button><br>
+      </form>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

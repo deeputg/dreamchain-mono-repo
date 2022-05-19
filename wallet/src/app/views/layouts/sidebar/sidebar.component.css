@@ -1,0 +1,223 @@
+.dc-lt-sidebar{
+  height: 85vh !important;
+  background-color: #031321;
+}
+
+.dc-lt-sidebar a,li {
+  margin-left: 0;
+  padding-top: 5%;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+
+@media screen and (max-height: 450px) {
+  .dc-lt-sidebar {padding-top: 15px;}
+  .dc-lt-sidebar a {font-size: 18px;}
+}
+
+
+.dc-lt-margin-bottom{
+  margin-bottom: 0;
+}
+
+.dc-lt-ul-main{
+  height: 70vh;
+}
+
+.active{
+  color: #447EF2 !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+.drawer-hamburger{
+  position: absolute !important;
+  top: -7vh !important;
+  left: 2vh;
+}
+.drawer-hamburger::after{
+  top:0 !important
+}
+.drawer-hamburger-icon{
+color: #fff !important;
+}
+.drawer-hamburger-icon::after,
+.drawer-hamburger-icon::before{
+  color: #fff !important;
+}
+
+@media only screen and (device-width: 320px) and (device-heigh: 568px){
+  .dc-lt-sidebar{
+    height: 130vh !important;
+  }
+  .dc-lt-margin-bottom{
+    margin-top: 20vh !important;
+  }
+  .drawer-hamburger{
+    position: absolute !important;
+    top: -8.4vh !important;
+  }
+}
+
+@media only screen and (max-device-width: 480px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+  .dc-lt-sidebar{
+    height: 100vh !important;
+  }
+  .dc-lt-margin-bottom{
+    margin-top: 15vh !important;
+  }
+  .drawer-hamburger{
+    position: absolute !important;
+    top: -8vh !important;
+    left: 2vh;
+  }
+  .drawer-hamburger::after{
+    position: absolute !important;
+    top: -8vh !important;
+    left: 2vh;
+  }
+}
+
+@media only screen and (device-width: 768px){
+  .dc-lt-sidebar{
+    height: 130vh !important;
+  }
+  .dc-lt-margin-bottom{
+    margin-top: 20vh !important;
+  }
+  .drawer-hamburger{
+    position: absolute !important;
+    top: -6vh !important;
+  }
+}
+
+@media only screen and (device-width: 812px){
+  .drawer-hamburger{
+      position: absolute !important;
+      top: -13vh !important;
+      left: 4vh;
+    }
+  }
+
+  @media only screen and (device-width: 375px) and (device-height: 667px ){
+    .drawer-hamburger{
+        position: absolute !important;
+        top: -7.4vh !important;
+        left: 2vh;
+      }
+
+      .dc-lt-ul-main{
+        height: 30vh;
+      }
+    }
+
+    @media only screen and (device-width: 375px) and (device-height: 812px ){
+      .drawer-hamburger{
+          position: absolute !important;
+          top: -6vh !important;
+          left: 2vh;
+        }
+
+        .dc-lt-ul-main{
+          height: 30vh;
+        }
+      }
+
+      @media only screen and (device-width: 414px){
+        .drawer-hamburger{
+            position: absolute !important;
+            top: -7vh !important;
+            left: 2vh;
+          }
+          .dc-lt-sidebar{
+            height: 85vh !important;
+            background-color: #031321;
+          }
+
+          .dc-lt-ul-main{
+            height: 30vh;
+          }
+        }
+
+        @media only screen and (device-width: 414px)  and (device-height: 896px ){
+          .drawer-hamburger{
+              position: absolute !important;
+              top: -5.5vh !important;
+              left: 2vh;
+            }
+            .dc-lt-sidebar{
+              height: 85vh !important;
+              background-color: #031321;
+            }
+
+            .dc-lt-ul-main{
+              height: 30vh;
+            }
+          }
+
+          @media only screen and (device-width: 414px)  and (device-height: 846px ){
+            .drawer-hamburger{
+                position: absolute !important;
+                top: -6vh !important;
+                left: 2vh;
+              }
+              .dc-lt-sidebar{
+                height: 85vh !important;
+                background-color: #031321;
+              }
+
+              .dc-lt-ul-main{
+                height: 30vh;
+              }
+            }
+
+            @media only screen and (device-width: 360px)  and (device-height: 640px ){
+              .drawer-hamburger{
+                  position: absolute !important;
+                  top: -7.5vh !important;
+                  left: 2vh;
+                }
+                .dc-lt-sidebar{
+                  height: 85vh !important;
+                  background-color: #031321;
+                }
+
+                .dc-lt-ul-main{
+                  height: 30vh;
+                }
+              }
+
+              @media only screen and (device-width: 360px)  and (device-height: 740px ){
+                .drawer-hamburger{
+                    position: absolute !important;
+                    top: -6.5vh !important;
+                    left: 2vh;
+                  }
+                  .dc-lt-sidebar{
+                    height: 85vh !important;
+                    background-color: #031321;
+                  }
+
+                  .dc-lt-ul-main{
+                    height: 30vh;
+                  }
+
+                }
+
+                @media only screen and (device-width: 768px)  and (device-height: 1024px ){
+                  .drawer-hamburger{
+                      position: absolute !important;
+                      top: -5vh !important;
+                      left: 2vh;
+                    }
+                    .dc-lt-sidebar{
+                      height: 85vh !important;
+                      background-color: #031321;
+                    }
+
+                    .dc-lt-ul-main{
+                      height: 30vh;
+                    }
+
+                  }

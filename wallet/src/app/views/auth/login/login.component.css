@@ -1,0 +1,197 @@
+  html,
+  body {
+      min-width: 100vh;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  
+  .dc-lt-background-row {
+      overflow: hidden;
+  }
+  
+  .dc-lt-background {
+      background-color: #002340;
+      height: 85vh;
+      overflow: hidden;
+      margin-right: 0;
+  }
+  
+  .dc-lt-font-header {
+      color: white;
+      font-style: normal;
+      font-weight: 450;
+      font-size: 40px;
+      line-height: 51px;
+  }
+  
+  .dc-lt-font-content {
+      color: white;
+      font-style: normal;
+      font-weight: 450;
+      font-size: 12px;
+      line-height: 129%;
+  }
+  
+  .dc-lt-left-side-container {
+      text-align: center;
+      padding-left: 2%;
+      padding-right: 2%;
+      padding-top: 5%;
+      padding-bottom: 1.4%;
+  }
+  
+  .dc-lt-left-side-image {
+      /* height: 80%; */
+      width: 80%;
+  }
+  
+  .dc-lt-right-side-container {
+      color: white;
+      text-align: center;
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-top: 5%;
+  }
+  
+  .dc-lt-rounded-field {
+      border-radius: 25px;
+  }
+  
+  .dc-lt-btn-color {
+      background-color: #447EF2;
+  }
+  
+  a {
+      color: white;
+  }
+  
+.dc-login{
+    background-color: #002340;
+    padding: 20vh 0 20vh 0 !important;
+    text-align: center;
+}
+.dc-login-img-wrap{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.dc-login-img{
+    width: 35vh;
+}
+.dc-login-color{
+    color: #fff;
+    padding: 0 5rem 0 5rem;
+    margin-top: 0rem;
+  }
+.dc-login-card{
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.dc-login-extra-padding{
+  padding-bottom: 30vh !important;
+}
+.dc-login-extra-padding-rm{
+  padding-bottom: 12vh !important;
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .dc-login{
+    padding: 25vh 0 25vh 0 !important;
+  }
+  .dc-login-color{
+    margin-top: 0rem !important;
+    margin-left: -1rem !important;
+    padding: 0 0 0 0;
+  }
+  .dc-login-img{
+    width: 25vh;
+    align-content: center;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .dc-login{
+    padding: 10rem 0 10rem 0  !important;
+  }
+  .dc-login-img{
+    width: 40vh;
+  }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .dc-login{
+    padding: 0 !important;
+  }
+  .dc-login-color{
+    padding: 0 !important;
+    margin-top: 5rem !important;
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  .dc-login-img{
+    width: 40vh;
+  }
+  .dc-login-color{
+    padding: 0 1rem 1rem 0 !important;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .dc-login{
+    padding: 0 !important;
+  }
+  .dc-login-color{
+    padding: 2rem !important;
+    margin-top: 3rem !important;
+  }
+  
+}

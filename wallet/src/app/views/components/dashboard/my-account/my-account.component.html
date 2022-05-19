@@ -1,0 +1,140 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-sm-2 col-md-4 col-lg-4 pt-3">
+      <div class="dc-dash-card box-shadow">
+        <img src="./../../../assets/icons/account.png" alt="Account Image">
+        <label for="" class="dc-lt-account-name" id="accountName">{{accountInfo?.accountName}}</label>&nbsp;
+        <img src="./../../assets/icons/clipboard.png" class="dc-lt-clipboard" (click)="doCopyName()" alt="Clipboard">
+        <br>
+        <label for="" class="dc-lt-grey">Account Name</label>
+      </div>
+    </div>
+
+    <div class="col-sm-9 col-md-8 col-lg-8 pt-3">
+      <div class="dc-dash-balance-card box-shadow">
+
+        <div class="row justify-content-center  dc-lt-card-color dc-lt-top-column">
+          <ul class="dc-dash-balance">
+            <li>
+              <img src="./../../../assets/icons/wallet.png" alt="Wallet Image">
+            </li>
+            <li>
+              <label for="" class="dc-lt-wallet-balance">Wallet Balance</label><br />
+              <label for="" class="dc-lt-drmi-balance">{{accountInfo?.drmiBalance}}</label><br />
+              <label for="" class="dc-lt-balance-grey">Dreamium Token</label>
+            </li>
+            <li>
+              <label for="" class="dc-lt-drmc-balance">{{accountInfo?.drmcBalance}}</label><br />
+              <label for="" class="dc-lt-balance-grey">Dreamcoin</label>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-5">
+      <div class="p-3">
+        <div class="row justify-content-center dc-dash-balance-card p-4 text-left dc-lt-bottom-column box-shadow">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-12 col-lg-12 p-1 text-center">
+              <button type="button" class="btn btn-primary dc-lt-btn {{tokenTransfer?'active':''}}"
+                (click)="ontokenTransfer()" name="button">Transfer</button>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12  p-1 text-center">
+              <button type="button" class="btn btn-primary dc-lt-btn {{sendDRMI?'active':''}}" (click)="onByDrmi()"
+                name="button">Buy Dreamium Token</button>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12  p-1 text-center">
+              <button type="button" class="btn btn-primary dc-lt-btn {{sendDRMC?'active':''}}" (click)="onByDrmc()"
+                name="button">Buy Dreamcoin</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="tokenTransfer" class="col-sm-8 col-md-8 col-lg-7">
+      <div class="p-3">
+        <div class="row justify-content-left  dc-dash-transfer-card p-1 dc-lt-bottom-column box-shadow">
+          <form name="form" [formGroup]="transferForm" autocomplete="off" (ngSubmit)="transferTokens()">
+            <label for="" class="dc-lt-buy-drmc">Transfer</label><br>
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                <label for="" class="dc-lt-pay">To</label>
+                <input type="text" class="form-control form-control-lg" formControlName="recipient"
+                  placeholder="Account Name" maxlength="12" minlength="12">
+                <app-control-messages [control]="transferForm.controls.recipient"></app-control-messages>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3">
+                <label for="" class="dc-lt-pay">Amount</label>
+                <input type="text" class="form-control form-control-lg" formControlName="amount" placeholder="0.000" min="0">
+                <app-control-messages [control]="transferForm.controls.amount"></app-control-messages>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-3"  style="bottom:-6px">
+                <br>
+                <select id="tokens" formControlName="symbol" class="form-control form-control-lg">
+                  <option [selected]="true" value="null">Select</option>
+                  <option value="drmc">DRMC</option>
+                  <option value="drmi">DRMI</option>
+                </select>
+                <app-control-messages [control]="transferForm.controls.symbol"></app-control-messages>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <br>
+                <textarea name="name" rows="1" cols="50" class="form-control form-control-lg" formControlName="memo"
+                  placeholder="Note"></textarea><br>
+                <app-control-messages [control]="transferForm.controls.memo"></app-control-messages>
+                <button type="submit" [disabled]="!transferForm.valid" class="btn btn-primary dc-lt-rounded-button"
+                  name="button">Transfer</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="sendDRMC" class="col-sm-8 col-md-8 col-lg-7">
+      <div class="p-3">
+        <div class="row justify-content-left  dc-dash-token-card p-1 dc-lt-bottom-column box-shadow">
+          <form class="col-sm-9 col-md-9 col-lg-9" [formGroup]="buyDrmcForm" (ngSubmit)="buyDrmc()">
+            <label for="" class="dc-lt-buy-drmc">Buy DRMC</label>
+            <input type="text" class="form-control form-control-lg" formControlName="drmcQuantity" placeholder="DRMC"
+              (input)="drmcQuantityChange()" min="0"><br>
+            <app-control-messages [control]="buyDrmcForm.controls.drmcQuantity"></app-control-messages>
+            <label for="" class="dc-lt-pay">Pay</label>
+            <input type="text" class="form-control form-control-lg" placeholder="USD" formControlName="usdQty" value="{{usd}}" readonly min="0"><br>
+            <label for="" class="dc-lt-balance-grey">1 DRMC = 0.00 USD</label><br>
+            <button type="submit" [disabled]="!buyDrmcForm.valid" class="btn btn-primary dc-lt-rounded-button"
+              name="button">Buy</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="sendDRMI" class="col-sm-8 col-md-8 col-lg-7 ">
+      <div class="p-3">
+        <div class="row justify-content-left  dc-dash-token-card p-1 dc-lt-bottom-column box-shadow">
+          <form class="col-sm-9 col-md-9 col-lg-9" [formGroup]="buyDrmiForm" (ngSubmit)="buyDrmi()">
+            <label for="" class="dc-lt-buy-drmc">Buy DRMI</label>
+            <input type="text" class="form-control form-control-lg" formControlName="drmiQty" placeholder="DRMI"
+              (input)="onDrmiChange()" value="{{drmiQty}}" min="0"><br>
+            <app-control-messages [control]="buyDrmiForm.controls.drmiQty"></app-control-messages>
+            <label for="" class="dc-lt-pay">Pay</label>
+            <input type="text" class="form-control form-control-lg" formControlName="drmcQty" placeholder="DRMC"
+              (input)="onDrmcChange()" value="{{drmcQty}}" readonly min="0"><br>
+            <app-control-messages [control]="buyDrmiForm.controls.drmcQty"></app-control-messages>
+            <label for="" class="dc-lt-balance-grey">1 DRMI = 1 DRMC</label><br>
+            <button type="submit" [disabled]="!buyDrmiForm.valid" class="btn btn-primary dc-lt-rounded-button"
+              name="button">Buy</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+@import url('https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  font-family: "Circular Std Book" !important;
+  background-color: #011826;
+  display:flex;
+  flex-direction:column;
+}
+
+app-control-messages {
+  color: red;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.box-shadow{
+    box-shadow:1px 1px 2px black;
+}

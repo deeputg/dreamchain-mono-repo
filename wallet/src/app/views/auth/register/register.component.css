@@ -1,0 +1,263 @@
+html,body{
+  min-width: 100vh;
+  min-height: 100vh;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container-fluid {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.dc-lt-background-row{
+  overflow: hidden;
+}
+
+.dc-lt-background{
+  background-color: #002340;
+  height: 85vh;
+  overflow: hidden;
+  margin-right:0;
+}
+
+.dc-lt-font-header{
+  color: white;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 40px;
+  line-height: 51px;
+}
+
+.dc-lt-font-content{
+  color: white;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 12px;
+  line-height: 129%;
+}
+
+.dc-lt-left-side-container{
+ text-align: center;
+ padding-left: 2%;
+ padding-right: 2%;
+ padding-top: 1.4%;
+ padding-bottom: 1.4%;
+}
+
+.dc-lt-left-side-image{
+  height: 50%;
+  width: 50%;
+}
+
+.dc-lt-right-side-container{
+ color: white;
+ text-align: center;
+ padding-left: 5%;
+ padding-right: 5%;
+ padding-top: 5%;
+ /* padding-bottom: 5%; */
+}
+
+.dc-lt-rounded-field{
+  border-radius: 25px;
+  font-size: 80%;
+  height: 40px;
+}
+
+.dc-lt-btn-color{
+  background-color: #447EF2;
+}
+
+a{
+  color: white;
+}
+
+.container-fluid{
+  width: 100% !important;
+}
+
+.dc-lt-clipboard{
+   position: absolute;
+   right: 0;
+   margin-top: -34px;
+   background-color:  rgba(196, 196, 196, 0.7);
+   border-radius: 50%;
+   padding: 0.5%;
+   margin-right: 2.5vh;
+   cursor: pointer;
+}
+
+.dc-reg{
+  background-color: #002340;
+  padding: 9vh !important;
+  text-align: center;
+}
+
+.dc-reg-img{
+  align-content: center;
+  width: 35vh;
+}
+.dc-reg-color{
+  color: #fff;
+  padding: 0 0rem 0 5rem;
+  margin-top: 7rem;
+}
+.dc-reg-card{
+  background-color: transparent !important;
+  color: #fff;
+  text-align: center;
+  border: none !important;
+}
+.dc-reg-card{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.card-img{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .dc-reg{
+    display: inline-block;
+    padding: 20vh 0 20vh 0  !important;
+  }
+  .dc-reg-child{
+    margin-right: 0 !important;
+  }
+  .dc-reg-img{
+    width: 20vh;
+    margin-left: 5vh;
+    align-content: center;
+  }
+  .dc-reg-color{
+    margin-top: 4rem !important;
+    margin-left: -1rem !important;
+    padding: 0 0 0 0;
+  }
+  .dc-lt-clipboard{
+    position: absolute;
+    margin-right: 1vh;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .dc-reg{
+    display: inline-block;
+    padding: 5rem 0 4rem 0  !important;
+  }
+  .dc-reg-color{
+    margin-left: -1rem !important;
+  }
+  .dc-reg-img{
+    width: 25vh;
+    margin-left: 12vh;
+    align-content: center;
+  }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .dc-reg{
+    padding: 0 !important;
+  }
+  .dc-reg-child{
+    margin-right: 0 !important;
+  }
+  .dc-reg-img{
+    margin-left: 1vh;
+  }
+  .dc-reg-color{
+    padding: 0 !important;
+    margin-top: 5rem !important;
+  }
+  .dc-lt-clipboard{
+    position: absolute;
+    margin-right: 1vh;
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation : landscape) {
+  .dc-reg-img{
+    margin-left: 4rem;
+  }
+  .dc-reg-color{
+    padding: 0 1rem 1rem 0 !important;
+  }
+  .dc-lt-clipboard{
+    position: absolute;
+    margin-right: 5vh;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .dc-reg{
+    padding: 0 !important;
+  }
+  .dc-reg-child{
+    margin-right: 0 !important;
+  }
+  .dc-reg-img{
+    margin-left: 10vh;
+  }
+  .dc-reg-color{
+    padding: 2rem !important;
+    margin-top: 3rem !important;
+  }
+  .dc-lt-clipboard{
+    position: absolute;
+    margin-right: 6.5vh;
+  }
+  
+}
